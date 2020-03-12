@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="chart_div" style="width: 100%; height: 500px;"></div>
+
+
+
+<table id="range-info-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Task</th>
+            <th>Performance</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form id="Range-Form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Task" name="Task">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Time" name="Time">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Result" name="Result">
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
